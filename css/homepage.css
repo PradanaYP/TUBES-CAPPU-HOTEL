@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1d4ed8;
+    --accent-color: #fbbf24;
+    --text-color: #1f2937;
+    --light-gray: #f3f4f6;
+    --transition-speed: 0.3s;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+header nav a {
+    position: relative;
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed);
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* Card Kamar */
+.room-card {
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+    transition: transform var(--transition-speed);
+}
+
+.room-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Testimoni Section */
+.testimonial-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    transition: transform var(--transition-speed);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Review Rating Stars */
+.star-rating {
+    color: var(--accent-color);
+    display: inline-flex;
+    gap: 2px;
+}
+
+.star-rating i {
+    transition: transform var(--transition-speed);
+}
+
+.star-rating:hover i {
+    transform: scale(1.2);
+}
+
+/* Destinasi Populer */
+.destination-item {
+    transition: background-color var(--transition-speed);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.destination-item:hover {
+    background-color: var(--light-gray);
+}
+
+.destination-item img {
+    transition: transform var(--transition-speed);
+}
+
+.destination-item:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Footer Styling */
+footer {
+    border-top: 1px solid var(--light-gray);
+}
+
+footer a {
+    transition: color var(--transition-speed);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Animasi Loading */
+.loading {
+    animation: shimmer 1.5s infinite linear;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Responsif Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .room-card:hover {
+        transform: none;
+    }
+
+    .destination-item:hover img {
+        transform: none;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header nav,
+    footer {
+        display: none;
+    }
+
+    .room-card,
+    .testimonial-card,
+    .destination-item {
+        break-inside: avoid;
+    }
+}

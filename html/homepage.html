@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Overvie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="/Gambar/download (3).jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                <h1 class="text-2xl font-semibold">Room Overview</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="text-gray-700 hover:text-gray-900" href="#">Home</a></li>
+                    <li><a class="text-gray-700 hover:text-gray-900" href="#">Booking History</a></li>
+                    <li><a class="text-gray-700 hover:text-gray-900" href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-4 py-8">
+        <section class="room-overview">
+            <h2 class="text-3xl">Cappu Hotel</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Room 1 -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Gambar/Berapa-Orang-dalam-1-Kamar-Hotel.jpg" alt="Room 1" class="w-full h-48 object-cover" width="600" height="400">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Room B</h3>
+                        <p class="text-gray-600">Starting from $200</p>
+                    </div>
+                </div>
+                <!-- Room 2 -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Gambar/revato-10941-5926452-540089.jpg" alt="Room 2" class="w-full h-48 object-cover" width="600" height="400">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Room S</h3>
+                        <p class="text-gray-600">Starting from $350</p>
+                    </div>
+                </div>
+                <!-- Room 3 -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Gambar/11.-Ini-10-Fasilitas-Kamar-Hotel-untuk-Tamu-dan-Fungsinya1-1.webp" alt="Room 3" class="w-full h-48 object-cover" width="600" height="400">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Room A</h3>
+                        <p class="text-gray-600">Starting from $300</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Testimonials Section -->
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold text-center mb-6">Customer Testimonials</h2>
+                    <div class="flex justify-center mb-6">
+                        <i class="fas fa-users text-6xl text-blue-500"></i>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white shadow-md rounded-lg p-6 flex items-center space-x-4">
+                            <img src="/Gambar/—Pngtree—3d render male avatar with_7497855.png" 
+                                 alt="John Doe" 
+                                 class="w-16 h-16 rounded-full">
+                            <div>
+                                <h3 class="text-lg font-semibold">John Doe</h3>
+                                <p class="text-gray-600 ">"Great service and luxurious experience!"</p>
+                                <button onclick="alert('Tombol diklik!')">Repeat Visitor</button>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="bg-white shadow-md rounded-lg p-6 flex items-center space-x-4">
+                            <img src="/Gambar/—Pngtree—3d character male cartoon with_6502959.png" 
+                                 alt="Jane Smith" 
+                                 class="w-16 h-16 rounded-full">
+                            <div>
+                                <h3 class="text-lg font-semibold">Jane Smith</h3>
+                                <p class="text-gray-600 ">"Amazing views and top-notch amenities!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+
+        <!-- Reviews Section -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Guest Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Review 1 -->
+                <div class="bg-white shadow rounded-lg p-4">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="/Gambar/—Pngtree—3d render male avatar with_7497855.png" alt="Alex Johnson" class="w-12 h-12 rounded-full" width="50" height="50">
+                        <div>
+                            <h3 class="text-lg font-semibold">John Doe</h3>
+                            <p class="text-gray-600">Great service and luxurious experience!</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white shadow rounded-lg p-4">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://storage.googleapis.com/a1aa/image/VRdD7MfFB20AJZxI4QfRu-N5Q_sXz2sstFBcV0cMDpI.jpg" alt="Mia Lee" class="w-12 h-12 rounded-full" width="50" height="50">
+                        <div>
+                            <h3 class="text-lg font-semibold">Mia Lee</h3>
+                            <p class="text-gray-600">Excellent service and beautiful views!</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i> 
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations Section -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Popular Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/a1aa/image/6j8bq1Xzq5F6kV1N7UupFyU5MdRRtf8GQ8rzsfaVMUM.jpg" alt="Beach Resorts" class="w-12 h-12" width="50" height="50">
+                    <div>
+                        <h3 class="text-lg font-semibold">Beach Resorts</h3>
+                        <p class="text-gray-600">Relax by the sea</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/a1aa/image/14M6xr0weW9EfGIYTkd0W_VI-hLPwkr8kgLniwK0PSI.jpg" alt="Historic Cities" class="w-12 h-12" width="50" height="50">
+                    <div>
+                        <h3 class="text-lg font-semibold">Historic Cities</h3>
+                        <p class="text-gray-600">Explore culture and heritage</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/a1aa/image/ZNhVBdiPUAyZjg6qe5Oidmi9DbYjXhHcdu9VC0Nd3UU.jpg" alt="Mountain Escapes" class="w-12 h-12" width="50" height="50">
+                    <div>
+                        <h3 class="text-lg font-semibold">Mountain Escapes</h3>
+                        <p class="text-gray-600">Breathtaking views</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">© 2023 Luxury Hotels</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">Privacy Policy</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
