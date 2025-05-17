@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Room Selection - MyHotel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container">
+        <img
+          src="/Gambar/download (3).jpg"
+          alt="Logo"
+          class="rounded-circle me-2"
+          width="32"
+          height="32"
+        />
+        <a class="navbar-brand fw-semibold" href="#">MyHotel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">history</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Room Selection Header -->
+    <div class="container text-center my-5">
+      <h3 class="mb-2 fw-bold">Room Selection</h3>
+      <p class="text-dark">Explore our room options</p>
+    </div>
+
+    <!-- Room Cards -->
+    <div class="container mb-5">
+      <div class="row g-4">
+        <!-- Room 1 (Big Image) -->
+        <div class="col-12">
+          <div class="card">
+            <img
+              src="/Gambar/kamar S.jpg"
+              class="card-img-top img-fluid"
+              alt="Executive Suite"
+              style="height: 340px; object-fit: cover"
+              loading="lazy"
+            />
+            <div class="card-body fw-medium">
+              <h6 class="fw-medium">Executive Suite</h6>
+              <p class="fw-medium">
+                Starting from $530
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room 2 to 4 (Small Images) -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Gambar/kamar mandi h.png"
+              class="card-img-top"
+              alt="Deluxe Room"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Deluxe Room</h5>
+              <p class="card-text text-dark">
+                Starting from <strong>$150</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Gambar/Desain tanpa judul.png"
+              class="card-img-top"
+              alt="Suite Room"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Suite Room</h5>
+              <p class="card-text text-dark">
+                Starting from <strong>$250</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="/Gambar/Breakfeast.png"
+              class="card-img-top"
+              alt="Executive Suite"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Executive Suite</h5>
+              <p class="card-text text-dark">
+                Starting from <strong>$530</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guest Information -->
+     <div class="container mb-5">
+      <h4 class="text-center mb-4 fw-bold">Guest Information</h4>
+     <!-- Booking Form -->
+    <div class="container my-5" data-aos="fade">
+      <h4 class="mb-4">Where do you want to stay?</h4>
+      <form
+        class="row g-3 bg-body-tertiary p-4 rounded-4 shadow-sm"
+        action="payment.html"
+        method="POST"
+      >
+        <!-- Destinasi -->
+        <div class="col-lg-3">
+          <label for="destination" class="form-label">Destination</label>
+          <input
+            type="text"
+            id="destination"
+            name="destination"
+            class="form-control"
+            placeholder="e.g. Jakarta, Bali"
+            required
+          />
+        </div>
+        <!-- Check-in Date -->
+        <div class="col-lg-2">
+          <label for="checkin" class="form-label">Check-in</label>
+          <input
+            type="date"
+            id="checkin"
+            name="checkin"
+            class="form-control"
+            required
+          />
+        </div>
+        <!-- Check-out Date -->
+        <div class="col-lg-2">
+          <label for="checkout" class="form-label">Check-out</label>
+          <input
+            type="date"
+            id="checkout"
+            name="checkout"
+            class="form-control"
+            required
+          />
+        </div>
+        <!-- Guests -->
+        <div class="col-lg-3">
+          <label for="guests" class="form-label">Guests</label>
+          <input
+            type="text"
+            id="guests"
+            name="guests"
+            class="form-control"
+            placeholder="e.g. 2 Adults, 1 Child"
+            required
+          />
+        </div>
+        <!-- Button go booking -->
+        <div class="col-lg-2">
+          <label class="form-label invisible">Button</label>
+          <a href="payment.html" class="btn btn-primary form-control">Go Booking</a>
+          </button>
+        </div>
+      </form>
+    </div>
+<!--footer-->
+ <footer class="footer bg-white text-dark py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+    <span class="text-dark">© 2022 MyHotel. All rights reserved.</span>
+    <a href="#" class="text-decoration-none text-dark mx-md-3">Terms of Service</a>
+    <a href="#" class="text-decoration-none text-dark mx-md-3">Privacy Policy</a>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
